@@ -1,3 +1,6 @@
+/* З перевикористанням стилів ще розбираюсь */
+/* Контакти не доробила, вибачте */
+
 /* General styles */
 
 body {
@@ -9,16 +12,15 @@ body {
 
 /* Header styles */
 
-header {
+.header-container {
     display: flex;
+    align-items: center;
+    padding: 2.5em 4.44em;
+    justify-content: space-between;
 }
 
 .logo {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 71px;
-    width: 65px;
-    height: 64.192px;
+    width: 4em;
 }
 
 a {
@@ -27,64 +29,62 @@ a {
 }
 
 .menu-list {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 96.896%;
-    margin: 40px 71px 40px;
-    justify-content: flex-end;
+    line-height: 96.8%;
     word-wrap: break-word;
 }
 
 .menu-item{
-    margin-right: 56px;
+    margin-left: 3.5em;
 }
 
 .blue-button {
     background-color: #7AE5FD;
     border: 0;
-    border-radius: 87px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    border-radius: 5.4em;
+    padding: 1.3em 2.1em;
+    margin-left: 1.5em;
     overflow: hidden;
     text-transform: uppercase;
 }
 
 /* First page */
+
 .first-page {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 
-.main-block {
-    margin: 202.5px 648px 203.5px 105px;
+.first-page-block {
+    margin: 12.6em 40.5em 12.6em 6.5em;
+    width: 50%;
 }
 
 .main-title {
     color: #FFF;
-    font-size: 65px;
+    font-size: 4em;
     font-style: normal;
     font-weight: 800;
     line-height: 94.9%;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .main-description {
     color: #000;
-    font-size: 20px;
+    font-size: 1.25em;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 .white-button {
@@ -92,9 +92,10 @@ a {
     background-color: #FFF;;
     display: flex;
     border: 0;
-    border-radius: 87px;
-    padding: 21px 35px;
-    margin-top: 20px;
+    font-size: 1.1em;
+    border-radius: 5.4em;
+    padding: 1.3em 2.1em;
+    margin-top: 1.25em;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
@@ -102,116 +103,290 @@ a {
 
 /* Second page */
 
-.description-top {
+.description-screen {
     background-color: #FFF;
-    width: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    display: inline-flex;
-}
-
-.description-title {
-    color: black;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 72px;
-    word-wrap: break-word;
-    margin: 160px 218px 15px 160px;
+    padding: 0em 4.4em 0em;
+    grid-row-gap: 3.1em;
 }
 
 .description {
-    background-color: #FFF;
     width: 100%;
+    display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    display: inline-flex;
-    margin-left: 280.5px;
+    margin-top: 160px;
     margin-bottom: 160px;
-    margin-right: 280.5px;
+}
+
+
+.description-title {
+    color: black;
+    font-size: 3.75em;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    margin: 0.9em;
 }
 
 .main-goal {
     color: black;
-    font-size: 27px;
+    font-size: 1.6em;
     font-weight: 400;
-    line-height: 32.40px;
+    line-height: 2em;
 }
 
 .description-goal {
     color: #73A6B1;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5em;
     margin-top: 10px;
 }
 
 /* Main information */
 
-.description-screen {
-    background: #FFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 71px 160px 71px;
-    grid-row-gap: 50px;
-}
-
 .description-block-box {
-    padding: 40px 62px;
     background: #F1FDFF;
-    border-radius: 10px;
+    border-radius: 0.6em;
+    padding: 2.5em 3.8em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.description-block {
+.description-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 10px;    
     flex: 1;
-}
+    margin-top: 65px;
+} 
 
 .description-block-title {
     color: black;
-    font-size: 46px;
+    font-size: 2.8em;
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 55.20px;
+    line-height: 120%;
     word-wrap: break-word;
-    margin: 51px 0px 10px 0px;
+    margin-bottom: 10px;
 }
+
+/* .description-block-subtitle .description-block-info {
+    color: black;
+    font-size: 1.25em;
+    line-height: 120%;
+    word-wrap: break-word;
+} */
 
 .description-block-subtitle {
     color: black;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
+    font-size: 1.25em;
+    line-height: 120%;
     word-wrap: break-word;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
 .description-block-info {
     color: black;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
+    font-size: 1.25em;
+    line-height: 120%;
     word-wrap: break-word;
+    font-weight: 400;
     margin-bottom: 67px;
 }
 
 .description-images {
-    width: 585px;
-    height: 456.583px;
-    border-radius: 5px;
+    width: 50%;
+    max-width: 100%;
+    /* height: 456.583px; */
+    border-radius: 0.3em;
     flex-shrink: 0;
     margin-left: 62px;
 }
+
+.bb-descr {
+    margin-bottom: 10em;
+}
+
+/* Fourth page */
+
+.mission-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission-descr {
+    background: #F1FDFF;
+    margin: 220px 86px 140px 87px;
+}
+
+.mission-text {
+    color: #000;
+    width: 558px;
+    font-size: 1.7em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 90px 600px 90px 62px;
+}
+
+.front-image {
+    z-index: 1;
+    position: absolute;
+    margin: -34px 181px 140px 805px;
+}
+
+.back-image {
+    position: absolute;
+    margin: 65px 43px 197px 682px;
+}
+
+/* Fifth page */
+
+.donat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 71px 160px;
+}
+
+.donat-title {
+    margin-bottom: 15px;
+}
+
+.donat-descr {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.goal-donat {
+    margin-bottom: 17px;
+}
+
+.bb-donation {
+    margin-top: 50px;
+    margin-bottom: 160px;
+}
+
+.donat-box div {
+    display: inline-flex;
+}
+
+.donat-box span {
+    color: #000;
+    text-align: center;
+    font-size: 3.75em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    /* grid-row-gap: 13px; */
+}
+
+.donat-box img {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+/* Contacts */
+
+.contacts {
+    background: #F9FADF;
+    display: flex;
+    padding: 0px 71px 160px 71px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.contacts-wrapped {
+    display: flex;
+    padding-top: 50px;
+    flex-direction: row;
+    align-items: flex-start;
+    /* grid-row-gap: 93px; */
+}
+
+.contacts-title {
+    margin: 50px 133px 209px 133px;
+}
+
+/* .contacts-fhone {
+    margin: 50px 158px 50px 93px;
+} */
+
+.info-cont {
+    margin-top: 9px;
+    margin-bottom: 0px;
+}
+
+.phone-number {
+    font-weight: 700;
+    margin-bottom: 57px;
+}
+
+.contacts-fhone img {
+    margin-right: 16px;
+    margin-bottom: 4px;
+}
+
+.mail-wrapped {
+    background: #FFF;
+    display: flex;
+    padding: 60px;
+    border-radius: 0.6em;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.mail-wrapped img {
+    margin: 22px 93px 22px 0px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-subscribe {
+    font-size: 1.7em;
+    margin: 0px 125px 39px 0px;
+}
+
+.subscribe input {
+    background: #F9FADF;
+    border: none;
+    border-radius: 61px;
+    display: flex;
+    padding: 21px 400px 21px 43px;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-bottom: 31px;  
+} 
+
+.bb-contacts {
+    padding: 21px 35px;
+    align-self: stretch;
+    margin-left: 0px;
+}
+
 
